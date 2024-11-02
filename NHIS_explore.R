@@ -124,3 +124,16 @@ model |>
   broom::tidy() 
 # uc plus abdpain plus immuunosupp pushes from 2.3 to 3.6 (between good and fair)
 
+model |> 
+  tbl_regression(
+    label = list(
+      paiapg3m_a = "Abdominal & Pelvic Pain",
+      ulc_col = "Ulcerative Colitis",
+      immsupp = "Immune Suppression"
+    ),
+    pvalue_fun = label_style_pvalue(digits = 3),
+    exponentiate = TRUE
+  ) |> 
+  modify_header(label = "**Health State (higher # is worse)**",
+                estimate = "**Adjusted OR**",)
+
