@@ -107,6 +107,21 @@ svy_adult23 |>
                 stat_2 = "**No Crohn's Disease**",
                 p.value= "**p**")
 
+# Survey counts
+
+survey_count(
+  svy_adult23,
+  crohnsev_a,
+  vartype = c("ci")
+  )
+
+survey_count(
+  svy_adult23,
+  ulccolev_a,
+  vartype = c("ci")
+)
+
+
 # Basic Modeling
 # note higher phstat is WORSE general health
 model <- svy_adult23 |> 
