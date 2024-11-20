@@ -1,10 +1,11 @@
 library(tidyverse)
+library(here)
 
-adult21 <- read.csv("C:/Users/phiggins/RCode/adult21.csv", header = T)
+adult23 <- read.csv("adult23.csv", header = T)
 
-names(adult21)
+names(adult23)
 
-length(unique(adult21$HHX))
+length(unique(adult23$HHX))
 
 # explanations of varnames in codebook
 # found as pdf in C:/Users/phiggins/RCode/
@@ -36,10 +37,10 @@ adult21$BMICAT_A %>% head(15) # BMI in categories 1-4 p161/629
 
 
 
-ggplot(adult21, aes(x=PHSTAT_A)) + xlim(0.5,5.5) + geom_histogram() +
+ggplot(adult23, aes(x=PHSTAT_A)) + xlim(0.5,5.5) + geom_histogram() +
   coord_flip()
 
-adult21 %>% filter(LSATIS4R_A <5) %>% 
+adult23 %>% filter(LSATIS4R_A <5) %>% 
   select(LSATIS4R_A) %>% summary()     
        
 # creating a survey object
@@ -68,7 +69,7 @@ class(svy_adult23)
 
 svy_adult23
 
-srvyr::svy_adult23 %>%
+svy_adult23 %>%
   summarize(
     age_mean = survey_mean(agep_a),
     age_med = survey_median(agep_a)
@@ -132,7 +133,7 @@ model <- svy_adult23 |>
   mutate(immsupp = 2-medrxtrt_a) |> # now 0=no immune suppression, 1=immune suppression
   filter(paiapg3m_a <5) |>
   svyglm(
-    formula = phstat_a ~ paiapg3m_a + ulc_col + immsupp) 
+    formula = phstat_a ~ paiapg3m_a + ulc_col*immsupp) 
 
 # baseline (intercept) general health between 2 very good and 3 good
 model |>
