@@ -150,6 +150,8 @@ model |>
     pvalue_fun = label_style_pvalue(digits = 3),
     exponentiate = TRUE
   ) |> 
-  modify_header(label = "**Health State (higher # is worse)**",
-                estimate = "**Adjusted OR**",)
+  modify_header(label = "**Health State (higher # is worse)**", estimate = "**Adjusted OR**") 
+  
+
+
 

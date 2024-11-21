@@ -7747,8 +7747,556 @@ mutate(hypdif_a = ordered(hypdif_a,
       "7_Refused",
       "8_Not Ascertained",
       "9_Don't Know"
-    ))) |> # now add these variables: 
-  
+    ))) |> # now add these variables: cbalhdinj_a, hrtest_a, baldizz_a, baldhp_a, bfall12m_a, hrtinnitus_a,
+  mutate(cbalhdinj_a = ordered(cbalhdinj_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrtest_a = ordered(hrtest_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(baldizz_a = ordered(baldizz_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(baldhp_a = ordered(baldhp_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(bfall12m_a = ordered(bfall12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrtinnitus_a = ordered(hrtinnitus_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: hrtinmedsp_a, hrloudjob_a, hrloudjb12m_a, hrfireev_a, hrfire12m_a, hrvloud12m_a,
+  mutate(hrtinmedsp_a = ordered(hrtinmedsp_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrloudjob_a = ordered(hrloudjob_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrloudjb12m_a = ordered(hrloudjb12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrfireev_a = ordered(hrfireev_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrfire12m_a = ordered(hrfire12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrvloud12m_a = ordered(hrvloud12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: hrjbexp12m_a , hrjbexp4hr_a, hrjbexptb_a, spousliv_a, spousep_a, evrmarried_a,
+  mutate(hrjbexp12m_a = ordered(hrjbexp12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrjbexp4hr_a = ordered(hrjbexp4hr_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hrjbexptb_a = ordered(hrjbexptb_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(spousliv_a = ordered(spousliv_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(spousep_a = ordered(spousep_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(evrmarried_a = ordered(evrmarried_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: spouswrk_a, spouswkft_a, prtnrwrk_a, prtnrwkft_a, afvet_a, afvettrn_a, 
+  mutate(spouswrk_a = ordered(spouswrk_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(spouswkft_a = ordered(spouswkft_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(prtnrwrk_a = ordered(prtnrwrk_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(prtnrwkft_a = ordered(prtnrwkft_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(afvet_a = ordered(afvet_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(afvettrn_a = ordered(afvettrn_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: combat_a, vadisb_a, vahosp_a, vacareev_a, natusborn_a, langhm_a, schcurenr_a,
+  mutate(combat_a = ordered(combat_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(vadisb_a = ordered(vadisb_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(vahosp_a = ordered(vahosp_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(vacareev_a = ordered(vacareev_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(natusborn_a = ordered(natusborn_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(langhm_a = ordered(langhm_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(schcurenr_a = ordered(schcurenr_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: emplastwk_a, empnowrk_a, empwrklsw1_a, empwrkft1_a, empsicklv_a, emphealins_a,
+  mutate(emplastwk_a = ordered(emplastwk_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(empnowrk_a = ordered(empnowrk_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(empwrklsw1_a = ordered(empwrklsw1_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(empwrkft1_a = ordered(empwrkft1_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(empsicklv_a = ordered(empsicklv_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(emphealins_a = ordered(emphealins_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: cevolun1_a, cevolun2_a, incwrko_a, incinter_a, incssrr_a, incssissdi_a,
+  mutate(cevolun1_a = ordered(cevolun1_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(cevolun2_a = ordered(cevolun2_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incwrko_a = ordered(incwrko_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incinter_a = ordered(incinter_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incssrr_a = ordered(incssrr_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incssissdi_a = ordered(incssissdi_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: ssissdidsb_a, incwelf_a, incretire_a, incothr_a, fsnap12m_a, fsnap30d_a,
+  mutate(ssissdidsb_a = ordered(ssissdidsb_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incwelf_a = ordered(incwelf_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incretire_a = ordered(incretire_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(incothr_a = ordered(incothr_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(fsnap12m_a = ordered(fsnap12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(fsnap30d_a = ordered(fsnap30d_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |> # now add these variables: fwic12m_a, flunch12m1_a, fdsskip_a,fdsless_a, fdshungry_a, fdsweight_a,
+  mutate(fwic12m_a = ordered(fwic12m_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(flunch12m1_a = ordered(flunch12m1_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(fdsskip_a = ordered(fdsskip_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(fdsless_a = ordered(fdsless_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(fdshungry_a = ordered(fdshungry_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(fdsweight_a = ordered(fdsweight_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+      ))) |> #now addthese variables: fdsnoteat_a, hougvasst_a, housecost_a, transpor_a, cemmetng_a, cevotelc_a
+  mutate(fdsnoteat_a = ordered(fdsnoteat_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(hougvasst_a = ordered(hougvasst_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(housecost_a = ordered(housecost_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(transpor_a = ordered(transpor_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(cemmetng_a = ordered(cemmetng_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) |>
+  mutate(cevotelc_a = ordered(cevotelc_a,
+    levels = c(1,2,3,4,5),
+    labels = c(
+      "1_Yes",
+      "2_No",
+      "7_Refused",
+      "8_Not Ascertained",
+      "9_Don't Know"
+    ))) 
   
   
   
